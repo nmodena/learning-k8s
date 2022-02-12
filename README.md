@@ -1,1 +1,1 @@
-# learning-k8s
+# my lab exercices to learn k8s

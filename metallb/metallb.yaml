@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  config: |
+    peers:
+    - my-asn: 64512
+      peer-asn: 65000
+      peer-address: 172.16.1.20
+      peer-port: 179
+    address-pools:
+    - name: my-ip-space
+      protocol: bgp
+      addresses:
+      - 172.16.24.0/24
+metadata:
+  name: config
+  namespace: metallb-system
