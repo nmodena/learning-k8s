@@ -141,7 +141,7 @@ I use a [vyos](https://vyos.io) router in my lab, it's just a VM and this is an 
 ```
 
 it's a vanilla bgp configuration, with a peer-group to group the common parameters of the three k8s nodes.
-and do not forget to enable multipath
+and obviously enable multipath
 
 commit the config and check the bgp status
 
@@ -213,9 +213,9 @@ B>* 172.16.24.0/32 [20/0] via 172.16.1.16, eth1, 00:11:46
 and perform a quick&dirty check directly from the router
 
 ```html
-vyos@vy-01:~$ telnet to 172.16.24.1 port 80
-Trying 172.16.24.1...
-Connected to 172.16.24.1.
+vyos@vy-01:~$ telnet to 172.16.24.0 port 80
+Trying 172.16.24.0...
+Connected to 172.16.24.0.
 Escape character is '^]'.
 GET /
 <html>
