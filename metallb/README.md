@@ -189,7 +189,7 @@ NAME         TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
 web-server   LoadBalancer   10.152.183.250   172.16.24.0   80:32130/TCP   15s
 ```
 
-and the external-IP assigned it's the first of metallb pool
+and the external-IP assigned it's the first of "my-ip-space" metallb pool
 
 
 ## 6 - check BGP advertisement and service reachability
